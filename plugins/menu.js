@@ -1,4 +1,4 @@
-<let levelling = require('../lib/levelling')
+let levelling = require('../lib/levelling')
 let fs = require('fs')
 let path = require('path')
 let fetch = require('node-fetch')
@@ -21,7 +21,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 
   let tags
   let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'game', 'rpg', 'xp', 'stiker', 'kerangajaib', 'quotes', 'admin', 'grup', 'premium', 'fitnah', 'asupan', 'internet', 'anonymous', 'anime', 'nulis', 'downloader', 'film', 'cerita', 'jadwal', 'tools', 'fun', '18+', 'vn', 'database', 'quran', 'audio', 'jadibot', 'info', 'tanpakategori', 'err', 'random', 'owner']
+  let arrayMenu = ['all', 'game', 'rpg', 'xp', 'stiker', 'kerangajaib', 'quotes', 'admin', 'grup', 'premium', 'fitnah', 'asupan', 'internet', 'anonymous', 'anime', 'nulis', 'downloader', 'film', 'cerita', 'jadwal', 'tools', 'fun', '18+', 'vn', 'database', 'quran', 'audio', 'jadibot', 'info', 'tanpakategori', 'err', 'owner']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
     'main': 'UTAMA',
@@ -53,7 +53,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     'quran': 'Al Qur\'an',
     'audio': 'Pengubah Suara',
     'jadibot': 'Jadi Bot',
-    'random': 'Random Menu',
     'info': 'Info',
     '': 'Tanpa Kategori',
     'err': 'Fitur Yg Eror',
@@ -146,9 +145,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'tanpakategori') tags = {
     '': 'Tanpa Kategori'
   }
-  if (teks == 'random') tags = {
-    '': 'Menu Random'
-  }  
   if (teks == 'err') tags = {
     'err': 'Fitut Yg Eror'
   }  
@@ -206,7 +202,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     const jamm = Math.floor( lebih % (1000 * 60 * 60 * 24) / (1000 * 60 * 60))
     const menitt = Math.floor( lebih % (1000 * 60 * 60) / (1000 * 60))
     const detikk = Math.floor( lebih % (1000 * 60) / 1000)
-    const ultah = new Date('August 23, 2022 23:59:59')
+    const ultah = new Date('August 18, 2022 23:59:59')
     const sekarat = new Date().getTime() 
     const Kurang = ultah - sekarat
     const ohari = Math.floor( Kurang / (1000 * 60 * 60 * 24));
@@ -266,11 +262,11 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
           { title: 'Kerang Ajaib', rowId: `${_p + command} kerangajaib` },
           { title: 'Quotes', rowId: `${_p + command} quotes` },
           { title: 'Grup', rowId: `${_p + command} grup` },
+          { title: 'Random Image', rowId: `${_p + command} randommenu` },          
           { title: 'Premium', rowId: `${_p + command} premium` },
           { title: 'Fitnah & Stres Generator', rowId: `${_p + command} fitnah` },          
           { title: 'Asupan', rowId: `${_p + command} asupan` },
           { title: 'Internet', rowId: `${_p + command} internet` },
-          { title: 'Random ALL Image & Video', rowId: `${_p} randommenu` },          
           { title: 'Anonymous', rowId: `${_p + command} anonymous` },
           { title: 'Anime', rowId: `${_p + command} anime` },
           { title: 'Nulis & Logo', rowId: `${_p + command} nulis` },

@@ -54,7 +54,6 @@
         "@bochilteam/scraper": "2.0.0",
         "awesome-phonenumber": "^2.69.0",
         "axios": "^0.26.0",
-        "caliph-api": "^0.7.6",
         "catch": "^1.0.48",
         "cfonts": "^2.10.0",
         "chalk": "^4.1.2",
@@ -69,7 +68,6 @@
         "g-i-s": "^2.1.6",
         "google-it": "^1.6.2",
         "human-readable": "^0.2.1",
-        "hxz-api": "^1.0.1",
         "image-to-base64": "^2.2.0",
         "jsdom": "^18.1.1",
         "lodash": "^4.17.21",
@@ -98,7 +96,6 @@
         "url-regex": "^5.0.0",
         "url-regex-safe": "^2.1.0",
         "wa-sticker-formatter": "^4.3.2",
-        "xfarr-api": "^1.0.3",
         "yargs": "^17.2.1",
         "yuzzu-api": "^1.0.2",
         "zs-extract": "^1.4.1"

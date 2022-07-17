@@ -88,9 +88,6 @@ global.fs = require('fs')
 global.data = JSON.parse(fs.readFileSync('./data.json'))
 global.fetch = require('node-fetch')
 global.bochil = require('@bochilteam/scraper')
-global.xa = require("xfarr-api")
-global.hx = require("hxz-api")
-global.ca = require("caliph-api")
 
 global.rpg = {
   emoticon(string) {
